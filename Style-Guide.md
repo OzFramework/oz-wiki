@@ -1,11 +1,11 @@
 When writing code for Oz we follow these rules:
-    - Two spaces, no tabs (for indentation).
-    - No trailing whitespace. Blank lines should not have any spaces.
-    - Prefer `and`/`or` over `&&`/`||`.
-    - Use `my_method(my_arg)` not `my_method( my_arg )` or `my_method my_arg`.
-    - Use `a = b` and not `a=b`.
-    - Prefer `method { do_stuff }` instead of `method{do_stuff}` for single-line blocks.
-    - Put spaces after list items and method parameters (`[1, 2, 3]`, not `[1,2,3]`).
-    - NEVER use single letter variables (even in loops).
-    - Code is generally written once, but read many times over. Consider the people who will read your code, and make it look nice for them.
-    - Follow the conventions in the source you see used already.
+- Two spaces, no tabs (for indentation).
+- No trailing whitespace. Blank lines should not have any spaces.
+- Prefer `and`/`or` over `&&`/`||`.
+- Use `my_method(my_arg)` not `my_method( my_arg )` or `my_method my_arg`.
+- Use `a = b` and not `a=b`.
+- Prefer `method { do_stuff }` instead of `method{do_stuff}` for single-line blocks.
+- Put spaces after list items and method parameters (`[1, 2, 3]`, not `[1,2,3]`).
+- NEVER use single letter variables (even in loops).
+- Code is generally written once, but read many times over. Consider the people who will read your code, and make it look nice for them.
+- Follow the conventions in the source you see used already.
