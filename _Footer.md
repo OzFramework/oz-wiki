@@ -1,1 +1,1 @@
-Not finding what you're looking for? Have questions? Send over a message here on Github or checkout our [Oz Discord server](https://discord.gg/yjKsWS6)
+Not finding what you're looking for? Have questions? Send over a message to ozframeworkdevs@gmail.com or checkout our [Oz Discord server](https://discord.gg/yjKsWS6)
