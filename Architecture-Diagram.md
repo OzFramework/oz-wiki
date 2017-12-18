@@ -1,1 +1,21 @@
 :construction: Under Construction :construction: 
+
+- CORE
+  - WORLD
+    - Gadgets
+      - Router
+      - Browser Engine
+      - Configuration Engine
+      - Data Engine
+      - Ledger
+      - Logger
+    - Extensions
+      - Router Extension
+      - Page Extension
+  - Core Page
+  - Page Elements
+  - Step Definitions
+- APP
+  - Root Page
+  - Overrides
+  - Pages
