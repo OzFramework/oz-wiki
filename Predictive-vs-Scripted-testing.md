@@ -2,12 +2,12 @@
 ## Testing with Context Aware Testing vs Scripted testing
 
 #### Oz
-In order to determine the outcome of tests, Oz is designed to use Context Awareness rather than simple scripting. To understand what we mean by this let's start by taking a look at  scripted testing.
+In order to determine the outcome of tests, Oz uses Context Awareness rather than static scripting. In this document we will compare the approaches and discuss the reasons why Oz uses this technique to handle tests.
 
 
 #### Scripted Testing
 
-Commonly, the process for creating behavioral automated testing involves describing _in extremely fine detail_ a list of instructions we want to take as a part of the test. These instructions are collected and described either in a gherkin-like DSL layer, aggregated into monolithic step definitions, abstracted into functions, or some combination of all three. A highly scripted test might look something like this:
+Commonly, the process for creating behavioral automated testing involves describing _in extremely fine detail_ a list of instructions we want to take which make up the test. These instructions are collected and described either in a gherkin-like DSL layer, aggregated into step definitions, abstracted into functions, or some combination of all three. A highly scripted test might look something like this:
 
 ##### Example 1.a
 ```gherkin
