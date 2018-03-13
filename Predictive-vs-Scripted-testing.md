@@ -2,12 +2,12 @@
 ## Testing with Context Aware Testing vs Scripted testing
 
 #### Oz
-In order to determine the outcome of tests, Oz uses Context Awareness rather than static scripting. In this document we will compare the approaches and discuss the reasons why Oz uses this technique to handle tests.
+In order to determine the outcome of tests, Oz uses ***Context Awareness*** rather than ***Static Scripting***. In this document we will compare the approaches and discuss the reasons why Oz uses this technique to handle tests.
 
 
 #### Scripted Testing
 
-Commonly, the process for creating behavioral automated testing involves describing _in extremely fine detail_ a list of instructions we want to take which make up the test. These instructions are collected and described either in a gherkin-like DSL layer, aggregated into step definitions, abstracted into functions, or some combination of all three. A highly scripted test might look something like this:
+Commonly, the process for creating behavioral automated tests involves describing _in extremely fine detail_ a list of instructions which make up the test. These instructions are collected and described either in a gherkin-like DSL layer, aggregated into step definitions, abstracted into functions, or some combination of all three. A highly scripted test might look something like this:
 
 ##### Example 1.a
 ```gherkin
@@ -33,7 +33,7 @@ Scenario: Login and add a book to my cart
   Given I am logged in
   When I Search for "John Doe"
     And I add the first search result to my cart
-  Then I should see the "Book 1 by John Doe" as the "Item 1" text
+  Then I should see "Book 1 by John Doe" as the "Item 1" text
 ```
 ```ruby
 #step_definitions.rb
@@ -55,7 +55,9 @@ When /^I add the first search result to my cart$/ do
 end
 ```
 
-In **Example 1.b** we can see that the instructions have been collected into more descriptive step definitions for re-use. If we look closely however the reality is that these instructions are still _scripted_ and very _static_ regardless of where they are described/implemented. This is great for smaller systems as it useful for clarity. However, **as soon as the system achieves any moderate level of complexity these static tests become exponentially harder to maintain**. This problem gets worse as time goes on because a single change to the AUT often makes it necessary to change many many sets of previously un-related instructions and tests that use those instructions become increasingly brittle as their effects become ever more intertwined. This brittleness turns directly into maintenance effort as features are added and tests start to fail.
+In **Example 1.b** we can see that the instructions have been collected into more descriptive step definitions for re-use. If we look closely however the reality is that these instructions are still _scripted_ and very _static_ regardless of where they are described/implemented. This is also usually true of implementation code also, even when an existing framework/pattern is used. Most frameworks or approaches which abstract away details don't deal with the fundamental fact that the test scripts that result are still highly static.
+
+This is great for smaller systems as it useful for clarity. However, **as soon as the system achieves any moderate level of complexity these static tests become exponentially harder to maintain**. This problem gets worse as time goes on because a single change to the AUT often makes it necessary to change many many sets of previously un-related instructions and tests that use those instructions become increasingly brittle as their effects become ever more intertwined. This brittleness turns directly into maintenance effort as features are added and tests start to fail.
 
 
 
