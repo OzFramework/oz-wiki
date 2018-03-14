@@ -63,16 +63,8 @@ This is great for smaller systems as it useful for clarity. However, **as soon a
 
 
 #### Context Aware Testing
-In short what we mean by _Context Aware Testing_ is the concept that
 
-Describe what states the application can be in
-
-we will create a _state model_ of what state the application is in using custom classes.
-
- instead  and then when we want to test we just tell Oz what we want it to get to, and let Oz validate all the parts of the app that we care about once we're in that state.
-
-
-
+:construction:
 
 
 
@@ -80,18 +72,17 @@ we will create a _state model_ of what state the application is in using custom 
 
 **Scripted Testing**
 
-- Pros:
-    - Simple to implement
-    - Easy to explain (especially to business partners)
-- Cons:
-    - Difficulty to maintain grows exponentially
-    - Scripts grow stale and become out dated
-    - Doesn't scale
-    - Tests are brittle (one change in the app can become many many changes in tests)
+:construction:
 
+
+
+**Context Aware Testing**
+
+:construction:
 
 
 
 #### Why Oz uses Context Aware Testing
-So what does that gain for us? The primary reason we use this paradigm is to help with one of our [two main goals](Home-Page), _Keep test maintenance to a minimum_. Remember that maintenance is the your worst enemy when it comes to automated testing.
+
+:construction:
 
